@@ -1,7 +1,7 @@
 import PySimpleGUI as sg
-#armazenar os generos e a quantidade
+#armazenar os generos e a quantidade na biblioteca
 generos = {"Acao" : 0,"Aventura" : 0,"Chanchada" : 0,"Comedia" : 0,"Comedia de acao" : 0,"Comedia de terror" : 0,"Comedia Dramatica" : 0,"Comedia Romantica" : 0,"Danca" : 0,"Documentario" : 0,"Ficção" : 0,"Drama" : 0,"Espionagem" : 0,"Faroeste" : 0,"Fantasia" : 0,"Ficção Cientifica" : 0,"Guerra" : 0,"Misterio" : 0,"Musical" : 0,"Policial" : 0,"Romance" : 0,"Terror" : 0}
-#armazenar lista
+#armazenar biblioteca
 with open ('generos.txt', 'a') as arquivo :
   for x in generos:
     arquivo.write(f"{x} : {generos[x]} filmes\n")
